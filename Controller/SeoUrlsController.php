@@ -5,7 +5,11 @@ App::uses('SeoAppController', 'Seo.Controller');
  *
  */
 class SeoUrlsController extends SeoAppController {
-
+/**
+ * Components
+ * 
+ * @var mixed
+ */
 	public $components = array('RequestHandler');
 /**
  * Scaffold
@@ -14,12 +18,12 @@ class SeoUrlsController extends SeoAppController {
  */
 	public $scaffold = 'admin';
 /**
- * 
+ * beforeFilter
  */
 	public function beforeFilter(){
 		parent::beforeFilter();
 		
-		if($this->RequestHandler->accepts('xml')){
+		if(strcmp($this->action,'show') == 0 ){
 			$this->RequestHandler->setContent('xml');
 		}
 		
@@ -27,17 +31,15 @@ class SeoUrlsController extends SeoAppController {
 /**
  * show
  * 
+ * Show the sitemap!
+ * 
  */
 	public function show(){
 		/**
-		 * FIXME: Error ...
-		 */
-		//$this->RequestHandler->setContent('xml');
-		/**
-		 * 
-		 * @var unknown_type
+		 * Empty Layout
 		 */
 		$this->layout = 'Seo.xml';
+		
 		$this->set('urls',$this->SeoUrl->find('all'));
 		
 	}
