@@ -4,7 +4,7 @@ App::uses('SeoAppController', 'Seo.Controller');
  * RobotTxtControllers Controller
  *
  */
-class RobotTxtController extends SeoAppController {
+class RobotsTxtController extends SeoAppController {
 
     public $components = array('RequestHandler');
 
