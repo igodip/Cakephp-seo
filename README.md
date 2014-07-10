@@ -9,6 +9,12 @@ Plugin for:
 - Add keywords and description for each url
 - Add / Edit Robots.txt
 
+Roadmap
+-
+
+- Add Social metadata (Facebook,Twitter,Google+)
+- Add Schema.org metadata
+
 Installation
 -
 
