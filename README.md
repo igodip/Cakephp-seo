@@ -1,12 +1,12 @@
 Cakephp-seo
 ===========
 
-Cakephp version (tested): 2.3.0
-Version: 0.0.1
+Cakephp version (tested): 2.5.2
+Version: 0.0.2
 
 Plugin for:
 - Easily create and manage sitemaps
-
+- Add keywords and description for each url
 
 Installation
 -
