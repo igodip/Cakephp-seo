@@ -3,6 +3,10 @@ App::uses('Component','Controller');
 
 class SeoComponent extends Component {
 
+    public function startup(Controller $controller){
+        $controller->helpers = array_merge($controller->helpers,array('Seo.Seo'));
+    }
+
     public function beforeRender(Controller $controller){
 
         $url = $controller->request->here;
@@ -17,8 +21,8 @@ class SeoComponent extends Component {
             $this->SeoUrl->save();
 
         }else{
-            $controller->set('seo_keywords',$result['SeoUrl']['keywords']);
-            $controller->set('seo_description',$result['SeoUrl']['description']);
+            //$controller->helpers[set('seo_keywords',$result['SeoUrl']['keywords']);
+            $controller->helpers['Seo.Seo'] = $result['SeoUrl'];
         }
 
     }
