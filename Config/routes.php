@@ -5,5 +5,6 @@
 /**
  * 
  */
-Router::connect('/sitemap.xml',array('plugin' =>'Seo','controller' => 'SeoUrls','action' => 'show'));
+//Router::parseExtensions('xml');
+Router::connect('/sitemap.xml',array('plugin' =>'Seo','controller' => 'SeoUrls','action' => 'sitemap'));
 

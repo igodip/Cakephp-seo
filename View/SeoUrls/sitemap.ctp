@@ -8,10 +8,10 @@ foreach($urls as $url){
 	
 	$seo_url = $xml->addChild('url');
 	
-	$seo_url->addChild('location',$url['SeoUrl']['location']);
-	$seo_url->addChild('lastmod',$url['SeoUrl']['lastmod']);
-	$seo_url->addChild('changefreq',$url['SeoUrl']['changefreq']);
-	$seo_url->addChild('priority',$url['SeoUrl']['priority']/100);
+	$seo_url->addChild('location',Router::fullBaseUrl().$url['SeoUrl']['url']);
+	//$seo_url->addChild('lastmod',$url['SeoUrl']['lastmod']);
+	//$seo_url->addChild('changefreq',$url['SeoUrl']['changefreq']);
+	//$seo_url->addChild('priority',$url['SeoUrl']['priority']/100);
 	
 }
 
