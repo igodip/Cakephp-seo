@@ -15,12 +15,16 @@ class SeoHelper extends AppHelper {
     }
 
     public function description(){
-        return '<meta name="description" content="'.$this->settings['description'].'" />';
+        if(isset($this->settings['description']) && strlen($this->settings['description']) != 0){
+            return '<meta name="description" content="'.$this->settings['description'].'" />';
+        }
 
     }
 
     public function keywords(){
-        return '<meta name="keywords" content="'.$this->settings['keywords'].'" />';
+        if(isset($this->settings['keywords']) && strlen($this->settings['keywords']) != 0){
+            return '<meta name="keywords" content="'.$this->settings['keywords'].'" />';
+        }
     }
 
 }
