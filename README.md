@@ -7,6 +7,7 @@ Version: 0.0.2
 Plugin for:
 - Easily create and manage sitemaps
 - Add keywords and description for each url
+- Add / Edit Robots.txt
 
 Installation
 -
