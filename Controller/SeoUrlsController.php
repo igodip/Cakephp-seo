@@ -12,7 +12,7 @@ class SeoUrlsController extends SeoAppController {
  *
  * @var mixed
  */
-	public $scaffold;
+	public $scaffold = 'admin';
 
     public function sitemap(){
 
