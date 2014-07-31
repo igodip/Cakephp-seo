@@ -30,7 +30,14 @@ Add this line to the end of app/config/bootstrap.php:
 
 ``` CakePlugin::load('Seo', array('bootstrap' => false, 'routes' => true)); ```
 
-And that's all!
+Load the Component in the AppController:
+
+``` public $components = array('Seo.Seo'); ```
+
+Use the helper in view files:
+
+    <?php echo $this->Seo->description(); ?>
+    <?php echo $this->Seo->keywords(); ?>
 
 Usage
 -
