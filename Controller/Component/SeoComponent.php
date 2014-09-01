@@ -16,6 +16,10 @@ class SeoComponent extends Component {
 			return;
 		}
 		
+		if(strcmp($controller->name,'CakeError') == 0){
+			return;
+		}
+		
 		if(strcmp($url, '/sitemap.xml') == 0){
 			return;
 		}
