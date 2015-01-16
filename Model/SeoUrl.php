@@ -60,6 +60,7 @@ class SeoUrl extends SeoAppModel {
 			),
 		),
 		'changefreq' => array(
+		/*
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
 				//'message' => 'Your custom message here',
@@ -67,7 +68,7 @@ class SeoUrl extends SeoAppModel {
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+			),*/
 		),
 		'priority' => array(
 			'numeric' => array(
